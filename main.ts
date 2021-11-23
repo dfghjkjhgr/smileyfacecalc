@@ -1,4 +1,4 @@
-let TEST_LIST = ["A", "B", "C", "D"]
+let TEST_LIST = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "-", "*", "/", "E"]
 let position_in_list = 0
 basic.forever(function on_forever() {
     input.onButtonPressed(Button.B, function on_button_pressed_b() {
@@ -19,5 +19,6 @@ basic.forever(function on_forever() {
         }
         
     })
+    //  input.on_button_pressed(Button.AB, on_button_pressed_ab)
     basic.showString(TEST_LIST[position_in_list])
 })
